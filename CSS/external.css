@@ -1,0 +1,9 @@
+/* This is element selector */
+
+h1 {
+    color: hsl(200, 100%, 50%);
+    background-color: hsl(0, 0%, 90%);
+    padding: 2rem;
+    text-align: center;
+    margin: 200px 400px;
+}
