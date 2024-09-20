@@ -9,20 +9,36 @@
         body {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 90vh;
             justify-content: center;
             align-items: center;
             font-size: 1.5rem;
+        }
+
+        input {
+            font-size: large;
+            border: none;
+            border-bottom: 1px solid;
+            outline: none;
+        }
+        button {
+            margin: 2rem;
+            background-color: black;
+            color: white;
+            border: none;
+            outline: none;
+            font-size: large;
+            padding: .5rem 3rem;
+            border-radius: .5vw;
         }
     </style>
 </head>
 
 <body>
-    <script>
-        for (let i = 1; i <= 10; i++) {
-            document.write(`5 * ${i} = ${5 * i} <br>`);
-        }
-    </script>
+    <input type="number" placeholder="Enter the number">
+    <button id="btn">Print Result</button>
+    <div class="result"></div>
+    <script src="./fibonacci.js"></script>
 </body>
 
 </html>
