@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM IN JavaScript</title>
+    <style>
+        * {
+            font-size: large;
+        }
+
+        .special {
+            width: fit-content;
+            height: fit-content;
+            padding: 1rem;
+            border: 1px solid;
+        }
+
+        .innerHTML {
+            width: 90%;
+            height: 100px;
+            border: 1px solid;
+            display: grid;
+            place-content: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <!--! Squaring a number with getElementById() -->
+        <div>
+            <label for="num">
+                Enter a Number : <input type="text" id="num" name="num">
+            </label>
+            <button type="button" type="number" onclick='square()'>Square</button>
+        </div>
+        <br>
+
+        <!--! Count of elements with name attr and its value is 'gender' using getElementsByName -->
+        <div>
+            <h3>Select your gender</h3>
+            Male : <input type="radio" name="gender" placeholder="gender">
+            Female: <input type="radio" name="gender" placeholder="gender">
+            <br>
+            <br>
+            <button type="button" onclick='totalCount()'>Click to know the count of Radio Buttons</button>
+        </div>
+        <br>
+
+        <!--! Count of total specials divs using getElementsByClassName-->
+        <div>
+            <div class="special">Special Div</div>
+            <div class="special">Special Div</div>
+            <div class="special">Special Div</div>
+            <div class="special">Special Div</div>
+            <button type="button" onclick="getTotalSelectors()">Click this button to know the Total Count of Special
+                classed elements</button>
+        </div>
+        <br>
+
+        <!--! program on innerHTML -->
+        <div>
+            <div class="innerHTML"></div>
+            <button type="button" onclick="addText()">Click this button to add text into above box</button>
+        </div>
+    </form>
+    <script>
+        // getElementsById()
+        function square(n) {
+            const val = document.getElementById('num').value;
+            document.write(`<h1>Result of input number is ${Math.pow(val, 2)}</h1>`);
+        }
+
+        // getElementsByName
+        function totalCount() {
+            const btns = document.getElementsByName('gender');
+            document.write(`<h1>The total count of elements with name value gender are ${btns.length}</h1>`)
+        }
+
+        // getElementsByClassName()
+        function getTotalSelectors() {
+            const total = document.getElementsByClassName('special');
+            document.write(`<h1>The total count of elements with class name special is ${total.length}</h1>`)
+        }
+
+        // innerHTML
+        function addText() {
+            document.querySelector('.innerHTML').innerHTML = "This text is injected here using JS";
+        }
+
+
+    </script>
+</body>
+
+</html>

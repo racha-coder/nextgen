@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling in JavaScript</title>
+    <style>
+        * {
+            font-size: 1.15rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" onsubmit="validate()">
+        Enter you username : <input type="text" id="user" placeholder="Enter your username">
+        <br>
+        Enter your password : <input type="text" id="pass" placeholder="Enter your Password">
+        <br>
+        <button type="submit">submit</button>
+    </form>
+    <script>;
+        function validate() {
+            const username = document.querySelector('#user').value;
+            const password = document.querySelector('#pass').value;
+
+            if (username === "" && password === "") {
+                document.write("Please Enter your Username and password");
+            } else if (password,length < 8) {
+                document.write("Your Password is less than 8 characters");
+            } else {
+                document.write("You are successfully logged in !");
+            }
+        }
+    </script>
+</body>
+
+</html>

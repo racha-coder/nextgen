@@ -1,0 +1,393 @@
+Database:
+--------------
+2 types 
+1. Relational Databases
+    Ex: MySQL, Oracle, MS SQL Server......
+
+Emp:
+EmpID  EmpName EmpAddress
+1001	Ajay	Hyderabad
+1002    Vijay	 Secunderabad
+
+2. Non-Relational Databases....   
+   Ex: MOngoDB, Postgre, Neo4j, Cassendra.....
+
+
+BSON(Binary JSON data format)
+Emp:
+{
+[
+{"empID":101,"empName":"ajay","empAddress":"Hyderabad"},
+{"empID":102,"empName":"Vijay","empAddress":"Secunderabad"}
+]
+}
+ 
+
+
+
+
+
+MERN:(MongoDB, ExpressJS, ReactJS, NodeJS)
+-------------------------------------------
+JavaScript Libraray
+
+
+Prerequisite:
+---------------
+javaScript
+
+
+
+ReactJS:
+-------
+User develop frontend Single Page Applications.....
+(Single Page Web Application): ReactJS(gmail, facebook, Instagram)
+(Multi Page Web Applications): Amazon
+
+MongoDB:
+-----------
+Used for to store data in the form of BSON(Binary JSON data)...
+We run MOngoDB in 2 ways
+1.  Using MongoDB Compass& Shell (Offline )
+2.  Using MongoDB cloud Atlas (Online)
+
+
+Express JS:
+-------------
+Used for Middleware Technology(Validate credentials), JSON, CORS...
+Used for to access REST API calls(get, post, put, delete....)
+
+Node JS:
+------------
+It is one of the server side based application...
+
+
+
+
+MERN stack requirement software Applications:
+======================================
+
+1. VSCode IDE
+     
+2. POSTMAN  (test REST API methods) or Thunder Client
+3. Node JS
+   ((https://nodejs.org/en/download/package-manager)..)
+4. git  (local repository)
+5. GitHub (Remote Repository)--Account
+6. MongoDB Community Server (MongoDB Compass)
+7. MongoDB Cloud Atlas
+
+
+
+HTML:
+==============
+HTML stands for HyperText Markup Language....
+Hyper text is a special code understood by the browser....
+It is marked with special tags...
+
+
+Importance: We create static Web Pages.......
+1. static web pages: We are not getting any response from the browser
+2. Dynamic web pages: We get response from the browser...
+
+
+
+Importance of Head Section:
+
+
+<head>:  basically <title> tag exist inside of the <head> tag
+    -> To write JavaScript code
+    ->To write VBScript code
+----> To Write External links
+   --> To functional Definition
+   -->External JavaScript links...
+   -->CSS code also we write
+
+
+Basic Elements or Tags:
+-------------------
+<html>
+<head>
+<body>
+<title>
+
+Note : html support both proper & improper nesting
+   
+
+Improper netsing:
+---------------------
+<!DOCTYPE html> <!--html5 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>Document</title>
+</head>
+</html>
+<body>
+    <h2>html tag i closed before body tag</h2>
+</body>
+
+
+
+Note: Html doesn't support Case Sensitive mechanism...
+
+
+Formatting Tags:
+==================
+
+
+
+form Elements:
+===============
+1. name
+2. number
+3. password
+4. radio
+
+
+
+<html>
+    <body>
+    <div>
+     <p>Welcome to div tag<br>
+    with <span style="color:red">span tag</span>
+    </p>
+    </div>
+    </body>
+</html>
+
+
+
+
+CSS:(cascading style sheet):
+Used for apply styles to web pages..
+
+Basically there are 3 ways we apply styles to webpage..
+
+1. Inline style 
+2. Internal style OR Embedded style sheet
+3. External style
+
+
+
+Types of Selectors in CSS:
+------------------------------
+There are mainly 5 types of selectors. They are
+1. Element Selector
+2. class
+3. ID selector
+4. Group selector
+5. Universal selector
+
+
+Box Model in CSS:
+--------------------------
+
+
+
+
+
+
+
+Class room Activity :
+--------------------------
+Write program to differentiate class and id selector....
+
+
+
+
+
+
+
+
+
+
+
+
+Why BootStrap:(Styles)
+----------------------
+Most of the organization now following BootStrap application
+using to add styles into web pages.
+
+
+CSS: code we write manual....
+
+Advantages: We cannot remember any other code in BootStrap...
+
+We use always CDN code in Bootstrap...
+
+
+
+
+
+
+git commands:
+======================
+git version control management system....
+
+
+
+-->git init
+	initialize local git into our system
+-->git config --global user.name "ajay4ugit"
+       Authorize from our self as username
+-->git config --global user.email "ajay4ugit@gmail.com"
+       Authorize from our self as mail
+-->git status
+      check the status of the project
+-->git add . (add all untracked files)
+      changing from untracked files into tracked files
+    OR
+-->git add "filename.extension"
+    (only selected file)
+-->git branch
+   to check our branch name (by default main branch)
+-->git checkout -b "newbranchname"
+    create a new branch 
+-->git branch -d "existingbranch name"
+     delete existing branch name
+-->git commit -m "message"
+     it is in staging area to commit local repository
+-->git remote add origin "GITHUB URL"
+     Add central repository address
+-->git push -u origin branchname
+     pushing project from local repository to
+      central repository
+
+-->git branch 
+   for finding branch name (by default main branch)
+-->git checkout -b "new branchname"
+   create new branch name 
+-->git checkout "branchname"
+  Enter into new branch name
+-->git branch -d "branchname"
+   to delete existing branch name 
+-->git clone https://github.com/ajay4ugit/crud_test.git
+   to clone the project or copy the project from other   
+   sources.
+
+
+
+
+
+JavaScript :
+---------------
+
+
+ES6 : Ecma Script..(2015),
+European computer Manufacturer Association..
+It is one of the Organization relased few set of
+standards of JavaScript Features. All these 
+JavaScript Features executes in any other browser
+
+Ex: Edge, Netscape Navigator, Mozilla firefox,
+    Google Chrome....
+
+
+ES7, ES8, ES9......
+
+
+
+JavaScript Es6 features:
+-----------------------
+1. let
+2. const
+3. Object Destrucrting
+4. Strings
+5. Async/Await
+6. Promise
+7. Rest Operators
+8. Spread Operator
+9. Default Paramaters
+10. Arrow function
+.......
+
+
+JavaScript Variables:
+--------------------------
+1. let
+2. const
+3. var
+
+
+
+Differences between let, const, var keywords:
+----------------------------------------------
+-> let keyword scope only inside of the block
+-> let keyword it initialize the value only at once    
+
+->Var keyword scope global (We access inside +outside)
+->We can initialize multiple times 
+
+->const keyword takes values in a constant mode only
+  we can't update or modify const keyword values....
+
+
+
+
+
+for(let a=0;a<5;a++)
+{
+    console.log("a value is="+a);
+}
+console.log("outside of the loop a value is="+a)
+
+
+
+
+
+for(var a=0;a<5;a++)
+{
+    console.log("a value is="+a);
+}
+console.log("outside of the loop a value is="+a)
+
+
+Note: Const variable cannot be modified
+
+for(const a=0;a<5;a++)
+{
+    console.log("a value is="+a);
+}
+console.log("outside of the loop a value is="+a)
+
+
+
+
+
+2. String :
+=====================
+
+
+let collegeName="CDC Deemed to University";
+console.log(collegeName);
+let collegeN=new String("CDC college");
+console.log(collegeN);
+
+1.startsWith()
+2.endsWith()
+3.includes()
+4.repeat()
+
+
+
+
+3. Template String:
+======================
+Note: Using backtick(` `) operator to print 
+expression in JavaScript...
+
+let cname="CDC college";
+console.log(`Hi Everyone i studied in ${cname}`);
+
+
+
+
+
+
+
+
+
+
+
+
