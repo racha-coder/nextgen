@@ -2,7 +2,10 @@ import { Component } from "react";
 
 // function App() {
 //   return (
-//     <div>This is a functional component</div>
+//     <div>
+//       This is a functional component
+//       <Test />
+//     </div>
 //   )
 // }
 
